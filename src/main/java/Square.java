@@ -5,8 +5,15 @@ public class Square extends Board {
 
     public Square()
     {
-        squareNumber = ++compteur;
-        this.squareName = "Square " + squareNumber;
+        if(compteur == 0)
+        {
+            this.squareName = "GO.";
+            compteur++;
+        }
+        else {
+            squareNumber = ++compteur;
+            this.squareName = "Square " + squareNumber;
+        }
     }
 
     public String getSquareName()
