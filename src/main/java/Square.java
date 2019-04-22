@@ -1,7 +1,13 @@
 public class Square extends Board {
     private String squareName;
     private int squareNumber;
+    private static int compteur = 0;
 
+    public Square()
+    {
+        squareNumber = ++compteur;
+        this.squareName = "Square " + squareNumber;
+    }
 
     public String getSquareName()
     {
