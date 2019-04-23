@@ -9,9 +9,8 @@ public class Player extends MonopolyGame {
         return this.name;
     }
 
-    public int rollDices(Dice d1, Dice d2) {
-        d1.roll();
-        d2.roll();
-        return d1.getFaceValue() + d2.getFaceValue();
+    public int rollDice(Dice d) {
+        d.roll();
+        return d.getFaceValue();
     }
 }
