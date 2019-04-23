@@ -8,7 +8,7 @@ class DiceTest {
         Dice d = new Dice(nbSides);
         d.roll();
         System.out.println("Score obtenu : " + d.getFaceValue());
-        assert(d.getFaceValue() >= 0 || d.getFaceValue() <= nbSides);
+        assert(d.getFaceValue() >= 1 && d.getFaceValue() <= nbSides);
     }
 
 }
