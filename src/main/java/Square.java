@@ -7,11 +7,11 @@ public class Square extends Board {
     {
         if(compteur == 0)
         {
-            this.squareName = "GO.";
+            this.squareName = "Go";
             compteur++;
         }
         else {
-            squareNumber = ++compteur;
+            squareNumber = compteur++;
             this.squareName = "Square " + squareNumber;
         }
     }
