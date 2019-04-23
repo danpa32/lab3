@@ -6,7 +6,7 @@ class SquareTest {
     //On s'assure que le nombre soit bien dans les bornes.
     void testGetSquareNumber() {
         Square s = new Square();
-        assert(s.getSquareNumber() <= 39 || s.getSquareNumber() >= 0);
+        assert(s.getSquareNumber() >= 0 && s.getSquareNumber() <= 39);
     }
 
 }
