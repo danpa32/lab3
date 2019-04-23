@@ -27,7 +27,7 @@ public class MonopolyGame {
         System.out.println("Tour n°" + roundCnt);
         int score;
         for (Player player : players) {
-            System.out.println("Lancement des dés ...");
+            System.out.println("Lancement des dés...");
             score = 0;
             for (Dice dice : dices) {
                 score += player.rollDice(dice);

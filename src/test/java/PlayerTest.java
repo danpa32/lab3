@@ -8,7 +8,7 @@ class PlayerTest {
         Dice d = new Dice(6);
         int score = 0;
         score += p.rollDice(d);
-        System.out.println(p.getName() + " a obtenu un score de : " + score);
+        System.out.println(p.getName() + " a obtenu un score de " + score);
         assert(score >= 1 && score <= 6);
     }
 
@@ -20,7 +20,7 @@ class PlayerTest {
         int score = 0;
         score += p.rollDice(d1);
         score += p.rollDice(d2);
-        System.out.println(p.getName() + " a obtenu un score de : " + score);
+        System.out.println(p.getName() + " a obtenu un score de " + score);
         assert(score >= 2 && score <= 12);
     }
 
